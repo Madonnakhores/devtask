@@ -21,7 +21,7 @@ jobs:
         npm install -g htmlhint
 
     - name: Validate HTML files
-      run: htmlhint "/index.html"  # Adjust the path to match your HTML files' location
+      run: htmlhint "/course.html"  # Adjust the path to match your HTML files' location
 
   deploy:
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
